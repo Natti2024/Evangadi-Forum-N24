@@ -12,9 +12,9 @@ const answerRoutes = require("./routes/answerRoute");
 const questionRoutes = require("./routes/questionRoute");
 
 // JSON middleware to extract JSON data
-
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
+
 
 
 
