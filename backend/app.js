@@ -13,11 +13,8 @@ const questionRoutes = require("./routes/questionRoute");
 
 // JSON middleware to extract JSON data
 
-app.use(cors());
 app.use(express.json());
-// const corsOptions = {
-//   origin: "http://localhost:5173", // Replace with the allowed origin
-// };
+app.use(cors());
 
 
 
@@ -41,7 +38,7 @@ const start = async () => {
     app.listen(PORT);
     console.log("Database connection established.");
   
-    console.log(`Listening on http://localhost:${PORT}`);
+    console.log(`Listening`);
   } catch (error) {
     console.log(error.message);
   }
